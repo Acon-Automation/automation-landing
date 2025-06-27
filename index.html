@@ -91,6 +91,35 @@
         tr:hover {
             background-color: #f0f4f8; /* Light blue-gray on hover */
         }
+        .messaging-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #4CAF50; /* A generic green for messaging */
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-top: 2rem; /* Add margin to separate from text above */
+        }
+        .messaging-button:hover {
+            background-color: #45a049; /* Darker green on hover */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .messaging-icon {
+            width: 28px;
+            height: 28px;
+            margin-right: 10px;
+        }
+        .messaging-icon-small {
+            width: 20px; /* Smaller icon for header */
+            height: 20px;
+            margin-left: 8px; /* Space between number and icon */
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -105,12 +134,20 @@
                 ACON
             </h1>
             <nav>
-                <ul class="flex space-x-6">
+                <ul class="flex space-x-6 items-center">
                     <li><a href="#overview" class="hover:text-blue-200 transition-colors duration-300">Overview</a></li>
                     <li><a href="#levels" class="hover:text-blue-200 transition-colors duration-300">Levels</a></li>
                     <li><a href="#schedule" class="hover:text-blue-200 transition-colors duration-300">Schedule</a></li>
                     <li><a href="#projects" class="hover:text-blue-200 transition-colors duration-300">Projects</a></li>
                     <li><a href="#software" class="hover:text-blue-200 transition-colors duration-300">Software</a></li>
+                    <li>
+                        <a href="https://wa.me/201286997506" target="_blank" class="flex items-center text-white hover:text-blue-200 transition-colors duration-300">
+                            +201286997506
+                            <svg class="messaging-icon-small" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.733-1.337L2 19l1.337-3.333A8.841 8.841 0 012 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2zm-7 4a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -130,6 +167,14 @@
                     Master industrial automation with hands-on training and real-world projects.
                 </p>
                 <p class="text-lg mb-8 opacity-80">Presented by <span class="font-bold">ACON</span> (Abanoub Girgis Fawzy)</p>
+
+                <!-- NEW: Messaging Contact Button at the top -->
+                <a href="https://wa.me/201286997506?text=Automation%20Diploma%20Now" target="_blank" class="messaging-button mx-auto md:mx-0">
+                    <svg class="messaging-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.733-1.337L2 19l1.337-3.333A8.841 8.841 0 012 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2zm-7 4a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                    </svg>
+                    Message Us Now! +201286997506
+                </a>
             </div>
             <div class="md:w-1/2 flex justify-center md:justify-end">
                 <!-- ACON Brand Logo SVG -->
@@ -280,6 +325,93 @@
         </div>
     </section>
 
+    <!-- Certification & Extras Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center">Certification & Extras</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                <div class="card p-6 text-center">
+                    <div class="flex-grow flex flex-col items-center justify-center">
+                        <span class="text-5xl text-green-500 mb-4">📚</span>
+                        <h3 class="text-xl font-semibold mb-2">Materials Access</h3>
+                        <p class="text-gray-700">PDF Materials & Video Recordings</p>
+                    </div>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="flex-grow flex flex-col items-center justify-center">
+                        <span class="text-5xl text-yellow-500 mb-4">🏆</span>
+                        <h3 class="text-xl font-semibold mb-2">Certified</h3>
+                        <p class="text-gray-700">Application-based Certificate with QR Auth</p>
+                    </div>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="flex-grow flex flex-col items-center justify-center">
+                        <span class="text-5xl text-purple-500 mb-4">💬</span>
+                        <h3 class="text-xl font-semibold mb-2">Dedicated Support</h3>
+                        <p class="text-gray-700">WhatsApp Support + Monthly Q&A Sessions</p>
+                    </div>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="flex-grow flex flex-col items-center justify-center">
+                        <span class="text-5xl text-red-500 mb-4">🤝</span>
+                        <h3 class="text-xl font-semibold mb-2">Alumni Network</h3>
+                        <p class="text-gray-700">Access to ACON’s Alumni Network</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Schedule Section -->
+    <section id="schedule" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center">Sample Schedule</h2>
+            <div class="overflow-x-auto">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Level</th>
+                            <th>Duration (Weeks)</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PLC Basic</td>
+                            <td>3</td>
+                            <td>30 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>PLC Advanced</td>
+                            <td>3</td>
+                            <td>30 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>HMI & SCADA</td>
+                            <td>3</td>
+                            <td>30 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Communication & Drives</td>
+                            <td>0.5</td>
+                            <td>7.5 Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Final Project</td>
+                            <td>0.5</td>
+                            <td>7.5 Hours</td>
+                        </tr>
+                        <tr class="font-bold bg-blue-50 text-blue-800">
+                            <td>Total</td>
+                            <td>10 Weeks</td>
+                            <td>105 Hours</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects You'll Complete Section -->
     <section id="projects" class="py-16 md:py-24 bg-gray-50">
         <div class="container mx-auto px-4">
@@ -387,6 +519,24 @@
                     <p class="text-lg font-medium">LogixPro</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Messaging Contact Section -->
+    <section id="whatsapp-contact" class="py-16 md:py-24 bg-gradient-to-r from-green-600 to-green-400 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-extrabold leading-tight mb-6">
+                Have More Questions or Ready to Enroll?
+            </h2>
+            <p class="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto opacity-90">
+                Send us a message on WhatsApp with "Automation Diploma Now" and we'll respond to you promptly!
+            </p>
+            <a href="https://wa.me/201286997506?text=Automation%20Diploma%20Now" target="_blank" class="messaging-button">
+                <svg class="messaging-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.733-1.337L2 19l1.337-3.333A8.841 8.841 0 012 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2zm-7 4a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+                </svg>
+                Message Us Now! +201286997506
+            </a>
         </div>
     </section>
 
